@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html id="root" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,28 @@
     <main class="personal-page">
         <!-- Header Section -->
         <section class="header">
-            <div class="logo">
-                <img src="./images/generated-1770490491714.png" alt="Logo">
+            <div class="header-top">
+                <div class="logo">
+                    <img src="./images/mrn_logo_blue.svg" alt="Logo">
+                </div>
+                <div class="header-buttons">
+                    <button class="dark-mode-toggle" onclick="toggleDarkMode()" title="Toggle Dark Mode">
+                        <span class="theme-icon" id="themeIcon">🌙</span>
+                    </button>
+                    <button class="language-toggle" onclick="toggleLanguage()" title="Toggle Language">
+                        <span class="toggle-en">العربية</span>
+                        <span class="toggle-ar hidden">English</span>
+                    </button>
+                </div>
             </div>
-            <h1 class="name-en">Tamer Solieman</h1>
-            <h2 class="name-ar">تامر سليمان</h2>
-            <p class="tagline">Product Leader · Agile Coach · Podcast Host</p>
+            <h1 class="name">
+                <span class="en-content">Tamer Solieman</span>
+                <span class="ar-content hidden">تامر سليمان</span>
+            </h1>
+            <p class="tagline">
+                <span class="en-content">Product Leader · Agile Coach · Podcast Host</span>
+                <span class="ar-content hidden">قائد منتجات · مدرب أجايل · مضيف بودكاست</span>
+            </p>
         </section>
 
         <!-- Divider -->
@@ -25,14 +41,19 @@
 
         <!-- About Section -->
         <section class="about-section">
-            <h3 class="section-label">ABOUT</h3>
+            <h3 class="section-label">
+                <span class="en-content">ABOUT</span>
+                <span class="ar-content hidden">نبذة عني</span>
+            </h3>
             <div class="about-columns">
-                <div class="about-column">
+                <!-- English Column -->
+                <div class="about-column en-content">
                     <h4 class="about-title">Building products people love</h4>
                     <p class="about-text">I'm passionate about developing loved and trusted products that make people's lives easier. With over two decades of experience in technical development and over a decade of managerial experience, I have had the opportunity to lead many cross-functional technical teams with an Agile mindset and Scrum framework practices.</p>
                     <p class="about-text">I'm committed to creating products that are beneficial to users and creating a friendly and happy environment for the teams I work with. I apply happiness management techniques in Management 3.0 to ensure teams are motivated and have a positive outlook.</p>
                 </div>
-                <div class="about-column about-ar">
+                <!-- Arabic Column -->
+                <div class="about-column about-ar ar-content hidden">
                     <h4 class="about-title">تطوير المنتجات المحبوبة</h4>
                     <p class="about-text">أنا شغوف بتطوير المنتجات المحبوبة والموثوقة التي تجعل حياة الناس أسهل. مع أكثر من عقدين من الخبرة في التطوير التقني وأكثر من عقد من الخبرة الإدارية، أتيحت لي الفرصة لقيادة العديد من الفرق التقنية متعددة التخصصات بعقلية أجايل وممارسات إطار عمل سكرم.</p>
                     <p class="about-text">أنا ملتزم بإنشاء منتجات مفيدة للمستخدمين وخلق بيئة ودية وسعيدة للفرق التي أعمل معها. قمت بتطبيق تقنيات إدارة السعادة Management 3.0 لضمان تحفيز الفرق والحفاظ على نظرة إيجابية.</p>
@@ -45,27 +66,35 @@
 
         <!-- Contact Section -->
         <section class="contact-section">
-            <h3 class="section-label">GET IN TOUCH</h3>
+            <h3 class="section-label">
+                <span class="en-content">GET IN TOUCH</span>
+                <span class="ar-content hidden">تواصل معي</span>
+            </h3>
             <div class="contact-buttons">
                 <a href="#" class="btn btn-secondary">
                     <span class="icon">in</span>
-                    LinkedIn
+                    <span class="en-content">LinkedIn</span>
+                    <span class="ar-content hidden">لينكدإن</span>
                 </a>
                 <a href="#" class="btn btn-secondary">
                     <span class="icon">𝕏</span>
-                    X
+                    <span class="en-content">X</span>
+                    <span class="ar-content hidden">اكس</span>
                 </a>
                 <a href="#" class="btn btn-secondary">
                     <span class="icon">✉</span>
-                    Email
+                    <span class="en-content">Email</span>
+                    <span class="ar-content hidden">بريد إلكتروني</span>
                 </a>
                 <a href="#" class="btn btn-secondary">
                     <span class="icon">📅</span>
-                    Schedule a Meeting
+                    <span class="en-content">Schedule a Meeting</span>
+                    <span class="ar-content hidden">حجز موعد</span>
                 </a>
                 <a href="#" class="btn btn-primary">
                     <span class="icon">☕</span>
-                    Buy Me A Coffee
+                    <span class="en-content">Buy Me A Coffee</span>
+                    <span class="ar-content hidden">اشترِ لي قهوة</span>
                 </a>
             </div>
         </section>
@@ -75,30 +104,41 @@
 
         <!-- Podcast Section -->
         <section class="podcast-section">
-            <h3 class="section-label">PODCAST</h3>
+            <h3 class="section-label">
+                <span class="en-content">PODCAST</span>
+                <span class="ar-content hidden">بودكاست</span>
+            </h3>
             <div class="podcast-header">
                 <img src="./images/generated-1770490557885.png" alt="Mrn Podcast Logo" class="podcast-logo">
                 <div class="podcast-title-group">
-                    <h4 class="podcast-title">Mrn Podcast — مرن بودكاست</h4>
-                    <p class="podcast-subtitle">An Arabic podcast focused on explaining the Agile mindset</p>
+                    <h4 class="podcast-title">مرن بودكاست - Mrn Podcast</h4>
+                    <p class="podcast-subtitle">
+                        <span class="en-content">An Arabic podcast focused on explaining the Agile mindset</span>
+                        <span class="ar-content hidden">بودكاست عربي يركز على شرح منهجية الأجايل</span>
+                    </p>
                 </div>
             </div>
             <div class="podcast-description">
-                <p class="podcast-text">I created a couple of podcasts; one of them was built in 2013 with 2 of my colleagues, and the other — "Mrn Podcast" — which I am currently working on, is an Arabic podcast focused on explaining the Agile mindset, as well as many of the frameworks associated with it, such as Scrum and Kanban. This podcast aims to provide a comprehensive understanding of the Agile mindset, its applications, and associated frameworks.</p>
-                <p class="podcast-text podcast-text-ar">كما أني أساس بعض البودكاستات، أحدها تم إنشاؤه في عام 2013 مع اثنين من زملائي، والآخر — "مرن بودكاست" — الذي أعمل عليه حاليًا، هو بودكاست عربي يركز على شرح منهجية الإدارة الرشيقة للمشاريع (أجايل)، بالإضافة إلى العديد من الأطر المرتبطة بها مثل سكرم وكانبان.</p>
+                <!-- English Description -->
+                <p class="podcast-text en-content">I created a couple of podcasts; one of them was built in 2013 with 2 of my colleagues, and the other — "Mrn Podcast" — which I am currently working on, is an Arabic podcast focused on explaining the Agile mindset, as well as many of the frameworks associated with it, such as Scrum and Kanban. This podcast aims to provide a comprehensive understanding of the Agile mindset, its applications, and associated frameworks.</p>
+                <!-- Arabic Description -->
+                <p class="podcast-text ar-content hidden">كما أني أساس بعض البودكاستات، أحدها تم إنشاؤه في عام 2013 مع اثنين من زملائي، والآخر — "مرن بودكاست" — الذي أعمل عليه حاليًا، هو بودكاست عربي يركز على شرح منهجية الإدارة الرشيقة للمشاريع (أجايل)، بالإضافة إلى العديد من الأطر المرتبطة بها مثل سكرم وكانبان.</p>
             </div>
             <div class="podcast-platforms">
                 <a href="#" class="btn btn-secondary">
                     <span class="icon">▶</span>
-                    YouTube
+                    <span class="en-content">YouTube</span>
+                    <span class="ar-content hidden">يوتيوب</span>
                 </a>
                 <a href="#" class="btn btn-secondary">
                     <span class="icon">♪</span>
-                    Spotify
+                    <span class="en-content">Spotify</span>
+                    <span class="ar-content hidden">سبوتيفاي</span>
                 </a>
                 <a href="#" class="btn btn-secondary">
                     <span class="icon">🎙</span>
-                    Apple Podcast
+                    <span class="en-content">Apple Podcast</span>
+                    <span class="ar-content hidden">أبل بودكاست</span>
                 </a>
             </div>
         </section>
@@ -108,20 +148,147 @@
 
         <!-- Blog Section -->
         <section class="blog-section">
-            <h3 class="section-label">BLOG</h3>
+            <h3 class="section-label">
+                <span class="en-content">BLOG</span>
+                <span class="ar-content hidden">المدونة</span>
+            </h3>
             <h4 class="blog-title">خواطر تامر</h4>
-            <p class="blog-desc">Thoughts on product management, Agile practices, and leadership</p>
+            <p class="blog-desc">
+                <span class="en-content">Thoughts on product management, Agile practices, and leadership</span>
+                <span class="ar-content hidden">أفكار حول إدارة المنتجات والممارسات الرشيقة والقيادة</span>
+            </p>
             <a href="#" class="btn btn-secondary">
                 <span class="icon">✏</span>
-                Read Blog
+                <span class="en-content">Read Blog</span>
+                <span class="ar-content hidden">اقرأ المدونة</span>
             </a>
         </section>
+
+        <!-- Divider -->
+        <div class="divider"></div>
 
         <!-- Footer -->
         <footer class="footer">
             <p class="footer-text">Tamer Solieman — تامر سليمان</p>
-            <p class="footer-copy">Product Leader · Agile Coach · Podcast Host</p>
+            <p class="footer-copy">
+                <span class="en-content">Product Leader · Agile Coach · Podcast Host</span>
+                <span class="ar-content hidden">قائد منتجات · مدرب أجايل · مضيف بودكاست</span>
+            </p>
         </footer>
     </main>
+
+    <script>
+        /**
+         * Toggle between light and dark mode
+         * Uses colors from the MRN logo: #0A7BD2 (blue) and #FFFFFF (white)
+         */
+        function toggleDarkMode() {
+            const root = document.documentElement;
+            const themeIcon = document.getElementById('themeIcon');
+            const isDarkMode = root.getAttribute('data-theme') === 'dark';
+
+            if (isDarkMode) {
+                // Switch to light mode
+                root.removeAttribute('data-theme');
+                themeIcon.textContent = '🌙';
+                localStorage.setItem('theme', 'light');
+            } else {
+                // Switch to dark mode
+                root.setAttribute('data-theme', 'dark');
+                themeIcon.textContent = '☀️';
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        /**
+         * Initialize dark mode preference on page load
+         */
+        function initializeDarkMode() {
+            const root = document.documentElement;
+            const themeIcon = document.getElementById('themeIcon');
+            const savedTheme = localStorage.getItem('theme') || 'light';
+
+            if (savedTheme === 'dark') {
+                root.setAttribute('data-theme', 'dark');
+                themeIcon.textContent = '☀️';
+            } else {
+                root.removeAttribute('data-theme');
+                themeIcon.textContent = '🌙';
+            }
+        }
+
+        /**
+         * Toggle between English and Arabic languages
+         */
+        function toggleLanguage() {
+            const root = document.getElementById('root');
+            const enElements = document.querySelectorAll('.en-content');
+            const arElements = document.querySelectorAll('.ar-content');
+            const toggleEn = document.querySelector('.toggle-en');
+            const toggleAr = document.querySelector('.toggle-ar');
+
+            if (root.lang === 'en') {
+                // Switch to Arabic
+                root.lang = 'ar';
+                document.documentElement.dir = 'rtl';
+                enElements.forEach(el => el.classList.add('hidden'));
+                arElements.forEach(el => el.classList.remove('hidden'));
+                toggleEn.classList.add('hidden');
+                toggleAr.classList.remove('hidden');
+                localStorage.setItem('preferredLanguage', 'ar');
+            } else {
+                // Switch to English
+                root.lang = 'en';
+                document.documentElement.dir = 'ltr';
+                enElements.forEach(el => el.classList.remove('hidden'));
+                arElements.forEach(el => el.classList.add('hidden'));
+                toggleEn.classList.remove('hidden');
+                toggleAr.classList.add('hidden');
+                localStorage.setItem('preferredLanguage', 'en');
+            }
+        }
+
+        /**
+         * Initialize language preference on page load
+         */
+        function initializeLanguage() {
+            const root = document.getElementById('root');
+            const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+            const enElements = document.querySelectorAll('.en-content');
+            const arElements = document.querySelectorAll('.ar-content');
+            const toggleEn = document.querySelector('.toggle-en');
+            const toggleAr = document.querySelector('.toggle-ar');
+
+            root.lang = savedLang;
+            document.documentElement.dir = savedLang === 'ar' ? 'rtl' : 'ltr';
+
+            if (savedLang === 'ar') {
+                enElements.forEach(el => el.classList.add('hidden'));
+                arElements.forEach(el => el.classList.remove('hidden'));
+                toggleEn.classList.add('hidden');
+                toggleAr.classList.remove('hidden');
+            } else {
+                enElements.forEach(el => el.classList.remove('hidden'));
+                arElements.forEach(el => el.classList.add('hidden'));
+                toggleEn.classList.remove('hidden');
+                toggleAr.classList.add('hidden');
+            }
+        }
+
+        /**
+         * Initialize all settings on page load
+         */
+        function initializeAll() {
+            initializeDarkMode();
+            initializeLanguage();
+        }
+
+        // Initialize on page load
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeAll);
+        } else {
+            initializeAll();
+        }
+    </script>
 </body>
 </html>
