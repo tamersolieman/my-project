@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html id="root" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="KungFu Panda - Master the Way of the Warrior">
+    <meta name="author" content="Tamer Solieman">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KungFu Panda</title>
+    <style>
+      /* ========================================
+         DESIGN SYSTEM VARIABLES (from personal.pen)
+         ======================================== */
+      :root {
+        /* Colors */
+        --color-primary: #FFD700;
+        --color-primary-dark: #FFC700;
+        --color-background-dark: #1a1a1a;
+        --color-background-darker: #2a2a2a;
+        --color-background-light: #FFFFFF;
+        --color-background-card: #f5f5f5;
+        --color-text-primary: #1a1a1a;
+        --color-text-secondary: #666666;
+        --color-text-light: #FFFFFF;
+
+        /* Typography - Font Sizes */
+        --font-size-logo: 28px;
+        --font-size-hero-title: 52px;
+        --font-size-hero-subtitle: 24px;
+        --font-size-section-title: 36px;
+        --font-size-feature-title: 18px;
+        --font-size-feature-desc: 14px;
+        --font-size-button: 16px;
+        --font-size-lang-switch: 14px;
+
+        /* Typography - Font Weights */
+        --font-weight-regular: 400;
+        --font-weight-semibold: 600;
+        --font-weight-bold: 700;
+
+        /* Spacing */
+        --spacing-xs: 8px;
+        --spacing-sm: 12px;
+        --spacing-md: 20px;
+        --spacing-lg: 40px;
+        --spacing-xl: 60px;
+        --spacing-gap-card: 20px;
+        --spacing-gap-content: 40px;
+        --spacing-gap-feature: 30px;
+
+        /* Border Radius */
+        --radius-button: 8px;
+        --radius-card: 12px;
+
+        /* Component Dimensions */
+        --header-height: 80px;
+        --hero-height: 450px;
+
+        /* Animation/Transition */
+        --transition-duration: 0.3s;
+      }
+
+      /* ========================================
+         GLOBAL STYLES
+         ======================================== */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Inter', sans-serif;
+        background-color: var(--color-background-light);
+        color: var(--color-text-primary);
+        line-height: 1.6;
+      }
+
+      /* ========================================
+         HEADER & NAVIGATION
+         ======================================== */
+      header {
+        background-color: var(--color-background-dark);
+        height: var(--header-height);
+        padding: var(--spacing-md) var(--spacing-lg);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 100;
+      }
+
+      .logo {
+        font-size: var(--font-size-logo);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-primary);
+        letter-spacing: 0;
+        white-space: nowrap;
+      }
+
+      .language-switch {
+        background-color: var(--color-primary);
+        color: var(--color-background-dark);
+        border: none;
+        padding: var(--spacing-xs) var(--spacing-md);
+        border-radius: var(--radius-button);
+        font-size: var(--font-size-lang-switch);
+        font-weight: var(--font-weight-semibold);
+        cursor: pointer;
+        transition: all var(--transition-duration) ease;
+        white-space: nowrap;
+      }
+
+      .language-switch:hover {
+        background-color: var(--color-primary-dark);
+        transform: translateY(-2px);
+      }
+
+      .language-switch:active {
+        transform: translateY(0);
+      }
+
+      /* ========================================
+         HERO SECTION
+         ======================================== */
+      .hero {
+        background-color: var(--color-background-darker);
+        padding: var(--spacing-xl) var(--spacing-lg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-md);
+        min-height: var(--hero-height);
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: var(--font-size-hero-title);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-primary);
+        max-width: 900px;
+        line-height: 1.2;
+      }
+
+      .hero p {
+        font-size: var(--font-size-hero-subtitle);
+        font-weight: var(--font-weight-regular);
+        color: var(--color-text-light);
+        max-width: 900px;
+      }
+
+      .hero .cta-button {
+        margin-top: var(--spacing-sm);
+      }
+
+      /* ========================================
+         CTA BUTTON
+         ======================================== */
+      .cta-button {
+        background-color: var(--color-primary);
+        color: var(--color-background-dark);
+        border: none;
+        padding: 15px var(--spacing-lg);
+        border-radius: var(--radius-button);
+        font-size: var(--font-size-button);
+        font-weight: var(--font-weight-semibold);
+        cursor: pointer;
+        transition: all var(--transition-duration) ease;
+        display: inline-block;
+        user-select: none;
+      }
+
+      .cta-button:hover {
+        background-color: var(--color-primary-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(255, 215, 0, 0.3);
+      }
+
+      .cta-button:active {
+        transform: translateY(0);
+      }
+
+      /* ========================================
+         CONTENT SECTION
+         ======================================== */
+      .content-section {
+        background-color: var(--color-background-light);
+        padding: var(--spacing-xl) var(--spacing-lg);
+      }
+
+      .section-title {
+        font-size: var(--font-size-section-title);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-primary);
+        margin-bottom: var(--spacing-gap-content);
+        text-align: left;
+      }
+
+      /* ========================================
+         FEATURES GRID
+         ======================================== */
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: var(--spacing-gap-feature);
+      }
+
+      .feature-card {
+        background-color: var(--color-background-card);
+        padding: var(--spacing-gap-card);
+        border-radius: var(--radius-card);
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        transition: all var(--transition-duration) ease;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      }
+
+      .feature-icon {
+        font-size: 32px;
+        line-height: 1;
+        height: 40px;
+        display: flex;
+        align-items: center;
+      }
+
+      .feature-title {
+        font-size: var(--font-size-feature-title);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-text-primary);
+      }
+
+      .feature-desc {
+        font-size: var(--font-size-feature-desc);
+        color: var(--color-text-secondary);
+        line-height: 1.5;
+      }
+
+      /* ========================================
+         LANGUAGE SUPPORT (RTL/LTR)
+         ======================================== */
+      .hidden {
+        display: none !important;
+      }
+
+      html[lang="en"] {
+        direction: ltr;
+      }
+
+      html[lang="ar"] {
+        direction: rtl;
+      }
+
+      html[lang="ar"] header {
+        flex-direction: row-reverse;
+      }
+
+      html[lang="ar"] .section-title {
+        text-align: right;
+      }
+
+      html[lang="ar"] .hero h1,
+      html[lang="ar"] .hero p {
+        text-align: right;
+      }
+
+      html[lang="ar"] .feature-card {
+        text-align: right;
+      }
+
+      html[lang="ar"] .feature-icon {
+        justify-content: flex-end;
+      }
+
+      /* ========================================
+         RESPONSIVE DESIGN - Tablet
+         ======================================== */
+      @media (max-width: 1024px) {
+        .hero h1 {
+          font-size: 42px;
+        }
+
+        .hero p {
+          font-size: 20px;
+        }
+
+        .section-title {
+          font-size: 28px;
+        }
+      }
+
+      /* ========================================
+         RESPONSIVE DESIGN - Mobile
+         ======================================== */
+      @media (max-width: 768px) {
+        header {
+          padding: var(--spacing-md) var(--spacing-md);
+          height: auto;
+          flex-wrap: wrap;
+          gap: var(--spacing-md);
+        }
+
+        .logo {
+          font-size: 24px;
+        }
+
+        .language-switch {
+          padding: var(--spacing-xs) 16px;
+          font-size: 12px;
+        }
+
+        .hero {
+          padding: var(--spacing-lg) var(--spacing-md);
+          min-height: 350px;
+          gap: var(--spacing-md);
+        }
+
+        .hero h1 {
+          font-size: 32px;
+        }
+
+        .hero p {
+          font-size: 18px;
+        }
+
+        .cta-button {
+          padding: 12px 32px;
+          font-size: 14px;
+        }
+
+        .content-section {
+          padding: var(--spacing-lg) var(--spacing-md);
+        }
+
+        .section-title {
+          font-size: 24px;
+          margin-bottom: 30px;
+        }
+
+        .features {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+
+        .feature-card {
+          padding: 16px;
+        }
+      }
+
+      /* ========================================
+         RESPONSIVE DESIGN - Small Mobile
+         ======================================== */
+      @media (max-width: 480px) {
+        header {
+          flex-direction: column;
+          gap: var(--spacing-sm);
+          padding: var(--spacing-md) var(--spacing-md);
+        }
+
+        html[lang="ar"] header {
+          flex-direction: column;
+        }
+
+        .logo {
+          font-size: 20px;
+        }
+
+        .hero {
+          padding: 30px 15px;
+          gap: 16px;
+        }
+
+        .hero h1 {
+          font-size: 24px;
+        }
+
+        .hero p {
+          font-size: 16px;
+        }
+
+        .cta-button {
+          padding: 12px 24px;
+          font-size: 14px;
+        }
+
+        .content-section {
+          padding: 30px 15px;
+        }
+
+        .section-title {
+          font-size: 20px;
+          margin-bottom: 20px;
+        }
+
+        .feature-card {
+          padding: 12px;
+        }
+
+        .feature-title {
+          font-size: 16px;
+        }
+
+        .feature-desc {
+          font-size: 13px;
+        }
+      }
+
+      /* ========================================
+         ACCESSIBILITY
+         ======================================== */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --color-background-card: #333333;
+          --color-text-secondary: #999999;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ============ HEADER ============ -->
+    <header>
+      <div class="logo">
+        <span class="en-content">🐼 KungFu Panda</span>
+        <span class="ar-content hidden">🐼 كونغ فو باندا</span>
+      </div>
+      <button class="language-switch" onclick="toggleLanguage()" aria-label="Toggle language">
+        <span class="en-content">العربية</span>
+        <span class="ar-content hidden">English</span>
+      </button>
+    </header>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero">
+      <h1 class="en-content">Master the Way of the Warrior</h1>
+      <h1 class="ar-content hidden">إتقن طريق المحارب</h1>
+
+      <p class="en-content">Unlock Your Inner Dragon Power</p>
+      <p class="ar-content hidden">أطلق قوة التنين الداخلية</p>
+
+      <button class="cta-button" onclick="handleCTA()">
+        <span class="en-content">🚀 Get Started</span>
+        <span class="ar-content hidden">ابدأ الآن 🚀</span>
+      </button>
+    </section>
+
+    <!-- ============ CONTENT SECTION ============ -->
+    <section class="content-section">
+      <h2 class="section-title">
+        <span class="en-content">Why Choose KungFu Panda?</span>
+        <span class="ar-content hidden">لماذا تختار كونغ فو باندا؟</span>
+      </h2>
+
+      <div class="features">
+        <!-- Feature Card 1: Ancient Wisdom -->
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">⚡</div>
+          <h3 class="feature-title">
+            <span class="en-content">Ancient Wisdom</span>
+            <span class="ar-content hidden">الحكمة القديمة</span>
+          </h3>
+          <p class="feature-desc">
+            <span class="en-content">Learn from legendary masters</span>
+            <span class="ar-content hidden">تعلم من الأساتذة الأسطوريين</span>
+          </p>
+        </article>
+
+        <!-- Feature Card 2: Expert Training -->
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🎯</div>
+          <h3 class="feature-title">
+            <span class="en-content">Expert Training</span>
+            <span class="ar-content hidden">التدريب المتخصص</span>
+          </h3>
+          <p class="feature-desc">
+            <span class="en-content">Step-by-step guidance included</span>
+            <span class="ar-content hidden">إرشادات خطوة بخطوة مضمونة</span>
+          </p>
+        </article>
+
+        <!-- Feature Card 3: Community -->
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">👥</div>
+          <h3 class="feature-title">
+            <span class="en-content">Community</span>
+            <span class="ar-content hidden">المجتمع</span>
+          </h3>
+          <p class="feature-desc">
+            <span class="en-content">Join thousands of warriors</span>
+            <span class="ar-content hidden">انضم لآلاف المحاربين</span>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ JAVASCRIPT ============ -->
+    <script>
+      /**
+       * Toggle between English and Arabic languages
+       * Switches language, updates visibility, and saves preference
+       */
+      function toggleLanguage() {
+        const root = document.getElementById('root');
+        const enElements = document.querySelectorAll('.en-content');
+        const arElements = document.querySelectorAll('.ar-content');
+        const currentLang = root.lang;
+
+        if (currentLang === 'en') {
+          // Switch to Arabic (RTL)
+          root.lang = 'ar';
+          enElements.forEach(el => el.classList.add('hidden'));
+          arElements.forEach(el => el.classList.remove('hidden'));
+          localStorage.setItem('preferredLanguage', 'ar');
+          document.documentElement.setAttribute('lang', 'ar');
+        } else {
+          // Switch to English (LTR)
+          root.lang = 'en';
+          enElements.forEach(el => el.classList.remove('hidden'));
+          arElements.forEach(el => el.classList.add('hidden'));
+          localStorage.setItem('preferredLanguage', 'en');
+          document.documentElement.setAttribute('lang', 'en');
+        }
+      }
+
+      /**
+       * Handle CTA button click
+       * Shows a message in the user's selected language
+       */
+      function handleCTA() {
+        const lang = document.getElementById('root').lang;
+        const messages = {
+          en: 'Thank you for your interest! This is a prototype.',
+          ar: 'شكراً لاهتمامك! هذا نموذج أولي.'
+        };
+        alert(messages[lang] || messages.en);
+      }
+
+      /**
+       * Initialize language preference on page load
+       * Loads saved language from localStorage or defaults to English
+       */
+      function initializeLanguage() {
+        const root = document.getElementById('root');
+        const savedLang = localStorage.getItem('preferredLanguage') || 'en';
+        const enElements = document.querySelectorAll('.en-content');
+        const arElements = document.querySelectorAll('.ar-content');
+
+        root.lang = savedLang;
+        document.documentElement.setAttribute('lang', savedLang);
+
+        if (savedLang === 'ar') {
+          enElements.forEach(el => el.classList.add('hidden'));
+          arElements.forEach(el => el.classList.remove('hidden'));
+        } else {
+          enElements.forEach(el => el.classList.remove('hidden'));
+          arElements.forEach(el => el.classList.add('hidden'));
+        }
+      }
+
+      // Initialize on page load
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializeLanguage);
+      } else {
+        initializeLanguage();
+      }
+    </script>
+  </body>
+</html>
