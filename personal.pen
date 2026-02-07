@@ -1,0 +1,876 @@
+{
+  "version": "2.7",
+  "children": [
+    {
+      "type": "frame",
+      "id": "7lmk5",
+      "x": 0,
+      "y": 0,
+      "name": "Personal Page",
+      "clip": true,
+      "width": 1440,
+      "fill": "#0A0E1A",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "OhaPl",
+          "name": "Header",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#0F2B4A",
+                "position": 0
+              },
+              {
+                "color": "#0A0E1A00",
+                "position": 1
+              }
+            ],
+            "center": {
+              "y": 0.4
+            }
+          },
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            60,
+            120,
+            48,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "cegji",
+              "name": "Logo",
+              "width": 120,
+              "height": 120,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1770490491714.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 60
+            },
+            {
+              "type": "text",
+              "id": "5t46D",
+              "name": "Name EN",
+              "fill": "#FFFFFF",
+              "content": "Tamer Solieman",
+              "fontFamily": "Outfit",
+              "fontSize": 48,
+              "fontWeight": "800",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "q8oRg",
+              "name": "Name AR",
+              "fill": "#4ECDC4",
+              "content": "تامر سليمان",
+              "fontFamily": "Inter",
+              "fontSize": 28,
+              "fontWeight": "300",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "PkaYn",
+              "name": "Tagline",
+              "fill": "#8A94A6",
+              "content": "Product Leader · Agile Coach · Podcast Host",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "madAP",
+          "name": "Divider",
+          "width": "fill_container",
+          "padding": [
+            0,
+            120
+          ],
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "FI8JJ",
+              "name": "divLine1",
+              "fill": "#1A2035",
+              "width": "fill_container",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "b1tkJ",
+          "name": "About Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            60,
+            120
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "iblcw",
+              "name": "aboutLabel",
+              "fill": "#4ECDC4",
+              "content": "ABOUT",
+              "fontFamily": "Outfit",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "frame",
+              "id": "LiVAN",
+              "name": "About Columns",
+              "width": "fill_container",
+              "gap": 60,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ZF9kZ",
+                  "name": "English Column",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HTI1m",
+                      "name": "aboutEnTitle",
+                      "fill": "#FFFFFF",
+                      "content": "Building products people love",
+                      "fontFamily": "Outfit",
+                      "fontSize": 28,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "jAd8X",
+                      "name": "aboutEnText",
+                      "fill": "#8A94A6",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "I'm passionate about developing loved and trusted products that make people's lives easier. With over two decades of experience in technical development and over a decade of managerial experience, I have had the opportunity to lead many cross-functional technical teams with an Agile mindset and Scrum framework practices.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "th7Qw",
+                      "name": "aboutEnText2",
+                      "fill": "#8A94A6",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "I'm committed to creating products that are beneficial to users and creating a friendly and happy environment for the teams I work with. I apply happiness management techniques in Management 3.0 to ensure teams are motivated and have a positive outlook.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "1msQv",
+                  "name": "Arabic Column",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "8dokt",
+                      "name": "aboutArTitle",
+                      "fill": "#FFFFFF",
+                      "content": "تطوير المنتجات المحبوبة",
+                      "textAlign": "right",
+                      "fontFamily": "Inter",
+                      "fontSize": 28,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ER0ma",
+                      "name": "aboutArText",
+                      "fill": "#8A94A6",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "أنا شغوف بتطوير المنتجات المحبوبة والموثوقة التي تجعل حياة الناس أسهل. مع أكثر من عقدين من الخبرة في التطوير التقني وأكثر من عقد من الخبرة الإدارية، أتيحت لي الفرصة لقيادة العديد من الفرق التقنية متعددة التخصصات بعقلية أجايل وممارسات إطار عمل سكرم.",
+                      "lineHeight": 1.7,
+                      "textAlign": "right",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "zIZ8p",
+                      "name": "aboutArText2",
+                      "fill": "#8A94A6",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "أنا ملتزم بإنشاء منتجات مفيدة للمستخدمين وخلق بيئة ودية وسعيدة للفرق التي أعمل معها. قمت بتطبيق تقنيات إدارة السعادة Management 3.0 لضمان تحفيز الفرق والحفاظ على نظرة إيجابية.",
+                      "lineHeight": 1.7,
+                      "textAlign": "right",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pPmbL",
+          "name": "Divider 2",
+          "width": "fill_container",
+          "padding": [
+            0,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "RVJdn",
+              "name": "divLine2",
+              "fill": "#1A2035",
+              "width": "fill_container",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "jjZ3m",
+          "name": "Contact Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            60,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "8JgCU",
+              "name": "contactLabel",
+              "fill": "#4ECDC4",
+              "content": "GET IN TOUCH",
+              "fontFamily": "Outfit",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "frame",
+              "id": "x6uxD",
+              "name": "Contact Buttons",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "oNA9w",
+                  "name": "linkedinBtn",
+                  "fill": "#111827",
+                  "cornerRadius": 8,
+                  "gap": 10,
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "iP72s",
+                      "name": "linkedinIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "linkedin",
+                      "iconFontFamily": "lucide",
+                      "fill": "#4ECDC4"
+                    },
+                    {
+                      "type": "text",
+                      "id": "9g67s",
+                      "name": "linkedinText",
+                      "fill": "#FFFFFF",
+                      "content": "LinkedIn",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "AebQH",
+                  "name": "xBtn",
+                  "fill": "#111827",
+                  "cornerRadius": 8,
+                  "gap": 10,
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "lkxYh",
+                      "name": "xIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "twitter",
+                      "iconFontFamily": "lucide",
+                      "fill": "#4ECDC4"
+                    },
+                    {
+                      "type": "text",
+                      "id": "1dNwH",
+                      "name": "xText",
+                      "fill": "#FFFFFF",
+                      "content": "X",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "olSNk",
+                  "name": "emailBtn",
+                  "fill": "#111827",
+                  "cornerRadius": 8,
+                  "gap": 10,
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "7tyt1",
+                      "name": "emailIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "mail",
+                      "iconFontFamily": "lucide",
+                      "fill": "#4ECDC4"
+                    },
+                    {
+                      "type": "text",
+                      "id": "5AEUx",
+                      "name": "emailText",
+                      "fill": "#FFFFFF",
+                      "content": "Email",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "l3dFW",
+                  "name": "scheduleBtn",
+                  "fill": "#111827",
+                  "cornerRadius": 8,
+                  "gap": 10,
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "ce2yk",
+                      "name": "scheduleIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "calendar",
+                      "iconFontFamily": "lucide",
+                      "fill": "#4ECDC4"
+                    },
+                    {
+                      "type": "text",
+                      "id": "9QZfU",
+                      "name": "scheduleText",
+                      "fill": "#FFFFFF",
+                      "content": "Schedule a Meeting",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wcrIQ",
+                  "name": "coffeeBtn",
+                  "fill": "#4ECDC4",
+                  "cornerRadius": 8,
+                  "gap": 10,
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "s9BqE",
+                      "name": "coffeeIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "coffee",
+                      "iconFontFamily": "lucide",
+                      "fill": "#0A0E1A"
+                    },
+                    {
+                      "type": "text",
+                      "id": "IhHno",
+                      "name": "coffeeText",
+                      "fill": "#0A0E1A",
+                      "content": "Buy Me A Coffee",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "600"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "0gqUb",
+          "name": "Divider 3",
+          "width": "fill_container",
+          "padding": [
+            0,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "YSBPl",
+              "name": "divLine3",
+              "fill": "#1A2035",
+              "width": "fill_container",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "yx4ps",
+          "name": "Podcast Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 40,
+          "padding": [
+            60,
+            120
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "y0Cu6",
+              "name": "podcastLabel",
+              "fill": "#4ECDC4",
+              "content": "PODCAST",
+              "fontFamily": "Outfit",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "frame",
+              "id": "MDu8V",
+              "name": "Podcast Header",
+              "width": "fill_container",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PCtf2",
+                  "name": "Podcast Logo",
+                  "width": 80,
+                  "height": 80,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "./images/generated-1770490557885.png",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 16
+                },
+                {
+                  "type": "frame",
+                  "id": "go2zo",
+                  "name": "podcastTitleGroup",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 8,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "G24AN",
+                      "name": "podcastTitle",
+                      "fill": "#FFFFFF",
+                      "content": "Mrn Podcast — مرن بودكاست",
+                      "fontFamily": "Outfit",
+                      "fontSize": 28,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "XnfMp",
+                      "name": "podcastSubtitle",
+                      "fill": "#8A94A6",
+                      "content": "An Arabic podcast focused on explaining the Agile mindset",
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DAmEx",
+              "name": "Podcast Description",
+              "width": "fill_container",
+              "gap": 60,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "yxSVr",
+                  "name": "podDescEn",
+                  "fill": "#8A94A6",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "I created a couple of podcasts; one of them was built in 2013 with 2 of my colleagues, and the other — \"Mrn Podcast\" — which I am currently working on, is an Arabic podcast focused on explaining the Agile mindset, as well as many of the frameworks associated with it, such as Scrum and Kanban. This podcast aims to provide a comprehensive understanding of the Agile mindset, its applications, and associated frameworks.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "fmRqK",
+                  "name": "podDescAr",
+                  "fill": "#8A94A6",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "كما أني أساس بعض البودكاستات، أحدها تم إنشاؤه في عام 2013 مع اثنين من زملائي، والآخر — \"مرن بودكاست\" — الذي أعمل عليه حاليًا، هو بودكاست عربي يركز على شرح منهجية الإدارة الرشيقة للمشاريع (أجايل)، بالإضافة إلى العديد من الأطر المرتبطة بها مثل سكرم وكانبان.",
+                  "lineHeight": 1.7,
+                  "textAlign": "right",
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "r3N8L",
+              "name": "Podcast Platforms",
+              "width": "fill_container",
+              "gap": 16,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "z0EGe",
+                  "name": "ytBtn",
+                  "fill": "#111827",
+                  "cornerRadius": 8,
+                  "gap": 10,
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "MJ0rv",
+                      "name": "ytIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "youtube",
+                      "iconFontFamily": "lucide",
+                      "fill": "#4ECDC4"
+                    },
+                    {
+                      "type": "text",
+                      "id": "tY54t",
+                      "name": "ytText",
+                      "fill": "#FFFFFF",
+                      "content": "YouTube",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "UX6u3",
+                  "name": "spotBtn",
+                  "fill": "#111827",
+                  "cornerRadius": 8,
+                  "gap": 10,
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "6MZTO",
+                      "name": "spotIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "music",
+                      "iconFontFamily": "lucide",
+                      "fill": "#4ECDC4"
+                    },
+                    {
+                      "type": "text",
+                      "id": "5dCVr",
+                      "name": "spotText",
+                      "fill": "#FFFFFF",
+                      "content": "Spotify",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qmiiB",
+                  "name": "appleBtn",
+                  "fill": "#111827",
+                  "cornerRadius": 8,
+                  "gap": 10,
+                  "padding": [
+                    14,
+                    28
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "anRxN",
+                      "name": "appleIcon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "podcast",
+                      "iconFontFamily": "lucide",
+                      "fill": "#4ECDC4"
+                    },
+                    {
+                      "type": "text",
+                      "id": "MPrxt",
+                      "name": "appleText",
+                      "fill": "#FFFFFF",
+                      "content": "Apple Podcast",
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mBGc8",
+          "name": "Divider 4",
+          "width": "fill_container",
+          "padding": [
+            0,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "SolPQ",
+              "name": "divLine4",
+              "fill": "#1A2035",
+              "width": "fill_container",
+              "height": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "IRyy7",
+          "name": "Blog Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            40,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "lena0",
+              "name": "blogLabel",
+              "fill": "#4ECDC4",
+              "content": "BLOG",
+              "fontFamily": "Outfit",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "letterSpacing": 3
+            },
+            {
+              "type": "text",
+              "id": "gbPDm",
+              "name": "blogTitle",
+              "fill": "#FFFFFF",
+              "content": "خواطر تامر",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "4n3PI",
+              "name": "blogDesc",
+              "fill": "#8A94A6",
+              "content": "Thoughts on product management, Agile practices, and leadership",
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "OlwJJ",
+              "name": "blogBtn",
+              "fill": "#111827",
+              "cornerRadius": 8,
+              "gap": 10,
+              "padding": [
+                14,
+                32
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "xOLnh",
+                  "name": "blogBtnIcon",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "pen-line",
+                  "iconFontFamily": "lucide",
+                  "fill": "#4ECDC4"
+                },
+                {
+                  "type": "text",
+                  "id": "PciKQ",
+                  "name": "blogBtnText",
+                  "fill": "#FFFFFF",
+                  "content": "Read Blog",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "8ygDq",
+          "name": "Footer",
+          "width": "fill_container",
+          "fill": "#070B14",
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            40,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "xyJ2b",
+              "name": "footerText",
+              "fill": "#4A5568",
+              "content": "Tamer Solieman — تامر سليمان",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "7akbq",
+              "name": "footerCopy",
+              "fill": "#2D3748",
+              "content": "Product Leader · Agile Coach · Podcast Host",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
